@@ -27,7 +27,7 @@ Ejecutar los tests sin red: `node --test test/runner.test.mjs`.
 El workflow también los ejecuta antes de cada llamada.
 
 Una ejecución manual correcta verifica Secrets y conectividad, no recurrencia.
-El calendario es diario a las 13:00 UTC (10:00 de Argentina); GitHub puede
+El calendario es diario a las 13:45 UTC (10:45 de Argentina); GitHub puede
 demorar ejecuciones. Verificar un run cuyo evento sea **schedule**, su horario,
 su resultado y el registro correspondiente en el CRM, sin navegador abierto.
 No reducir la frecuencia para simular esa prueba sin autorización.

@@ -95,7 +95,7 @@ test("dispatch accepts only a bounded confirmed result", async () => {
 
 test("workflow remains daily, probe-only by default and time bounded", async () => {
   const workflow = await readFile(new URL("../.github/workflows/posventa.yml", import.meta.url), "utf8");
-  assert.match(workflow, /cron: '0 13 \* \* \*'/);
+  assert.match(workflow, /cron: '45 13 \* \* \*'/);
   assert.match(workflow, /vars\.POSTVENTA_MODE \|\| 'probe'/);
   assert.match(workflow, /timeout-minutes: 6/);
   assert.match(workflow, /cancel-in-progress: false/);

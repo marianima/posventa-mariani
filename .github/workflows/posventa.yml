@@ -2,9 +2,9 @@ name: Posventa diaria
 
 on:
   schedule:
-    # UTC: 13:00 = 10:00 America/Argentina/Buenos_Aires.
+    # UTC: 13:45 = 10:45 America/Argentina/Buenos_Aires.
     # GitHub may delay scheduled jobs. This is not an exact-time guarantee.
-    - cron: '0 13 * * *'
+    - cron: '45 13 * * *'
   workflow_dispatch:
 
 permissions:
